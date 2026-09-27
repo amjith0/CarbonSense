@@ -2,13 +2,12 @@ import streamlit as st
 from calculate import calculate_footprint
 from advisor import generate_advice
 
-st.set_page_config(page_title="Carbon Footprint Estimator", page_icon="🌍")
-st.title("Carbon Footprint Estimator")
-st.caption("SDG 13 — Climate Action")
+st.set_page_config(page_title="CarbonSense", page_icon="🌍")
+st.title("CarbonSense")
+st.caption("AI-Powered Personal Carbon Footprint Estimator — SDG 13: Climate Action")
 
 st.write("Answer a few questions about your daily habits to estimate your monthly carbon footprint.")
 
-# --- Input form ---
 commute_mode = st.selectbox(
     "How do you usually commute?",
     options=["car_petrol", "car_diesel", "two_wheeler", "bus", "auto_rickshaw", "walk_cycle"],
